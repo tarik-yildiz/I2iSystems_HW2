@@ -29,5 +29,6 @@ public class HazelcastDemo {
     }
     endTime = System.currentTimeMillis();
     System.out.println("Time to get " + numberOfEntries + " entries: " + (endTime - startTime) + "ms");
+	hazelcast.shutdown();
     }
 }
